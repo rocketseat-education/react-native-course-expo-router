@@ -1,12 +1,15 @@
-import { Link } from 'expo-router'
-import { StyleSheet, View } from 'react-native'
+import { router } from 'expo-router'
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
-export default function Index() {
+export default function SignUp() {
+  function back() {
+    router.back()
+  }
   return (
     <View style={styles.container}>
-      <Link href="/" style={styles.back}>
-        Voltar
-      </Link>
+      <TouchableOpacity onPress={back}>
+        <Text style={styles.back}>Voltar</Text>
+      </TouchableOpacity>
     </View>
   )
 }
