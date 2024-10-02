@@ -12,7 +12,7 @@ export default function Index() {
         <Text style={styles.label}>Criar conta</Text>
       </TouchableOpacity>
 
-      <Link href="/product/12">Abrir produto</Link>
+      <Link href={{ pathname: '/home' }}>Ir para Home</Link>
     </View>
   )
 }
